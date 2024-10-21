@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أخبار كرة القدم</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1d;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .news-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .news-header {
+            text-align: center;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        .news-container {
+            display: flex;
+            overflow-x: auto; /* تمكين التمرير الأفقي */
+            gap: 15px;
+            padding: 10px;
+            scroll-behavior: smooth; /* تمرير سلس */
+        }
+
+        .news-card {
+            flex: 0 0 auto; /* يمنع العناصر من تغيير حجمها */
+            background-color: #222;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .news-content {
+            padding: 15px;
+        }
+
+        .news-title {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #ffcc00;
+        }
+
+        .news-summary {
+            font-size: 0.9em;
+            color: #ddd;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        /* لإخفاء شريط التمرير في بعض المتصفحات */
+        .news-container::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="news-section">
+        <h1 class="news-header">أحدث أخبار كرة القدم</h1>
+        <div class="news-container">
+            <!-- بطاقة الخبر الأول -->
+            <div class="news-card">
+                <img src="https://via.placeholder.com/300x180" alt="خبر 1">
+                <div class="news-content">
+                    <h3 class="news-title">فوز ريال مدريد على برشلونة في الكلاسيكو</h3>
+                    <p class="news-summary">حقق ريال مدريد فوزًا مثيرًا على غريمه التقليدي برشلونة في مباراة الكلاسيكو.</p>
+                    <a href="#" class="read-more">اقرأ المزيد</a>
+                </div>
+            </div>
+
+            <!-- بطاقة الخبر الثاني -->
+            <div class="news-card">
+                <img src="https://via.placeholder.com/300x180" alt="خبر 2">
+                <div class="news-content">
+                    <h3 class="news-title">ليفربول يتألق بفوز ساحق على مانشستر يونايتد</h3>
+                    <p class="news-summary">واصل ليفربول أداءه القوي في الدوري الإنجليزي بفوز كبير على مانشستر يونايتد.</p>
+                    <a href="#" class="read-more">اقرأ المزيد</a>
+                </div>
+            </div>
+
+            <!-- بطاقة الخبر الثالث -->
+            <div class="news-card">
+                <img src="https://via.placeholder.com/300x180" alt="خبر 3">
+                <div class="news-content">
+                    <h3 class="news-title">إصابة نيمار تهدد مشاركته في كأس العالم</h3>
+                    <p class="news-summary">تلقى نيمار ضربة قوية بعد تعرضه لإصابة قد تهدد فرصه في المشاركة في كأس العالم.</p>
+                    <a href="#" class="read-more">اقرأ المزيد</a>
+                </div>
+            </div>
+
+            <!-- يمكنك إضافة المزيد من بطاقات الأخبار هنا -->
+        </div>
+    </div>
+
+</body>
+</html>
+!
